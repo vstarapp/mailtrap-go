@@ -16,8 +16,8 @@ const (
 	libVersion = "0.1.0"
 
 	testingAPIURL = "https://mailtrap.io/"
-	sendingAPIURL = "https://send.api.mailtrap.io/"
-	apiSuffix     = "api"
+
+	apiSuffix = "api"
 
 	defaultAccept = "application/json"
 )
@@ -60,7 +60,8 @@ type TestingClient struct {
 }
 
 // NewSendingClient creates and returns an instance of SendingClient.
-func NewSendingClient(apiKey string) (*SendingClient, error) {
+func NewSendingClient(host, apiKey string) (*SendingClient, error) {
+	sendingAPIURL = fmt.Sprintf("https://%s/", host)
 	baseURL, err := url.Parse(sendingAPIURL)
 	if err != nil {
 		return nil, err

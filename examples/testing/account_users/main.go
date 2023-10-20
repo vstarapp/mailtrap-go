@@ -11,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/vorobeyme/mailtrap-go/mailtrap"
+	"github.com/vstarapp/mailtrap-go/mailtrap"
 )
 
 var client *mailtrap.TestingClient

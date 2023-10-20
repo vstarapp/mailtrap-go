@@ -95,7 +95,7 @@ func TestNewSendingClient(t *testing.T) {
 	apiKey := "api-token"
 	expectedBaseURL := sendingAPIURL + apiSuffix
 
-	c, err := NewSendingClient(apiKey)
+	c, err := NewSendingClient("send.api.mailtrap.io", apiKey)
 	if err != nil {
 		t.Errorf("Sending client returned error: %v", err)
 	}

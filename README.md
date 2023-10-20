@@ -1,9 +1,9 @@
 # mailtrap-go
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/vorobeyme/mailtrap-go.svg)](https://pkg.go.dev/github.com/vorobeyme/mailtrap-go)
-[![Go](https://github.com/vorobeyme/mailtrap-go/actions/workflows/go.yml/badge.svg)](https://github.com/vorobeyme/mailtrap-go/actions/workflows/go.yml)
-[![codecov](https://codecov.io/gh/vorobeyme/mailtrap-go/branch/main/graph/badge.svg?token=III91WIPLL)](https://codecov.io/gh/vorobeyme/mailtrap-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/vorobeyme/mailtrap-go)](https://goreportcard.com/report/github.com/vorobeyme/mailtrap-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/vstarapp/mailtrap-go.svg)](https://pkg.go.dev/github.com/vstarapp/mailtrap-go)
+[![Go](https://github.com/vstarapp/mailtrap-go/actions/workflows/go.yml/badge.svg)](https://github.com/vstarapp/mailtrap-go/actions/workflows/go.yml)
+[![codecov](https://codecov.io/gh/vstarapp/mailtrap-go/branch/main/graph/badge.svg?token=III91WIPLL)](https://codecov.io/gh/vstarapp/mailtrap-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/vstarapp/mailtrap-go)](https://goreportcard.com/report/github.com/vstarapp/mailtrap-go)
 
 
 Unofficial Mailtrap API client for Go.
@@ -14,13 +14,13 @@ The public API documentation is available at [https://api-docs.mailtrap.io](http
 
 ## Installation
 ```
-go get github.com/vorobeyme/mailtrap-go
+go get github.com/vstarapp/mailtrap-go
 ```
 
 ## Usage
 
 ```go
-import "github.com/vorobeyme/mailtrap-go"
+import "github.com/vstarapp/mailtrap-go"
 ```
 
 Create a new Mailtrap client, then use the exposed services to access different parts of the Mailtrap API.
@@ -31,7 +31,7 @@ package main
 import (
     "log"
 
-    "github.com/vorobeyme/mailtrap-go"
+    "github.com/vstarapp/mailtrap-go"
 )
 
 func main() {
