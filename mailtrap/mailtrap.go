@@ -61,7 +61,7 @@ type TestingClient struct {
 
 // NewSendingClient creates and returns an instance of SendingClient.
 func NewSendingClient(host, apiKey string) (*SendingClient, error) {
-	sendingAPIURL = fmt.Sprintf("https://%s/", host)
+	sendingAPIURL := fmt.Sprintf("https://%s/", host)
 	baseURL, err := url.Parse(sendingAPIURL)
 	if err != nil {
 		return nil, err
